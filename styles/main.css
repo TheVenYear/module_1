@@ -9,3 +9,22 @@ img {
   width: 100%;
   heigth: 100%;
 }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  border-bottom: 25px solid #2F2C2C;
+  transition: 100ms;
+}
+
+@media (max-width: 690px) {
+  .arrow-up {
+    display: block;
+  }
+}

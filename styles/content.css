@@ -1,0 +1,134 @@
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__body {
+  width: 100%;
+}
+
+.content__select {
+  display: none;
+}
+
+.content__sidebar {
+  border-right: 2px solid #BEBEBE;
+  padding: 20px;
+  width: 250px;
+}
+
+.content__sidebar__title {
+  color: #2F2C2C;
+  font-weight: 700;
+}
+
+.content__sidebar__nav li {
+  list-style: square;
+  color: red;
+}
+
+.content__sidebar__nav a {
+  text-decoration: none;
+  color: #2F2C2C;
+}
+
+.content__sidebar__nav a:hover {
+  color: red;
+}
+
+
+.content__sidebar__nav {
+  line-height: 1.5em;
+  margin-bottom: 200px;
+}
+
+.content__sidebar__nav li {
+  margin-left: -20px;
+}
+
+.content__body__goods {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content__body__goods__item {
+  width: 350px;
+  background: #F3F3F3;
+  border: 1px solid #BEBEBE;
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__body__goods__item__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content__body__goods__item__info__title {
+  font-weight: 700;
+  color: #2F2C2C;
+}
+
+.content__body__goods__item__link {
+  width: 400px;
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content__body__goods__item__info__price {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.content__body__goods__item__link img {
+  height: 130px;
+  object-fit: cover;
+}
+
+.content__body__goods__item__link__btn {
+  background: #FFB325;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 690px) {
+  .content__sidebar {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__select {
+    display: block;
+    margin: 0 20px;
+    font-size: 25px;
+  }
+
+  .content__body__banner {
+    display: none;
+  }
+
+  .content__body__goods {
+    margin-top: 10px;
+
+  }
+  .content__body__goods__item {
+    width: 80%;
+  }
+}
+
+

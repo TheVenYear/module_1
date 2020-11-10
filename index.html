@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/content.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -77,26 +78,51 @@
 
 <div class="content">
     <div class="content__sidebar">
-        <a href="#">Фототехника</a>
+        <a class="content__sidebar__title" href="./index.html">Фототехника</a>
         <ul class="content__sidebar__nav">
-            <li>Цифровые фотоаппараты</li>
-            <li>Объективы</li>
-            <li>Фотовспышки</li>
-            <li>Светофильтры</li>
-            <li>Фотосумки</li>
-            <li>Штативыб моноподы</li>
-            <li>Карты памяти</li>
-            <li>Накамерный свет LED</li>
-            <li>Микрофоны выносные</li>
-            <li>Калибраторы и шкалы</li>
-            <li>Подводные боксы</li>
-            <li>Аксессуары и опции</li>
+            <li><a href="?filter=camera">Цифровые фотоаппараты</a></li>
+            <li><a href="?filter=lens">Объективы</a></li>
+            <li><a href="">Фотовспышки</a></li>
+            <li><a href="">Светофильтры</a></li>
+            <li><a href="">Фотосумки</a></li>
+            <li><a href="">Штативыб моноподы</a></li>
+            <li><a href="">Карты памяти</a></li>
+            <li><a href="">Накамерный свет LED</a></li>
+            <li><a href="">Микрофоны выносные</a></li>
+            <li><a href="">Калибраторы и шкалы</a></li>
+            <li><a href="">Подводные боксы</a></li>
+            <li><a href="">Аксессуары и опции</a></li>
         </ul>
+        <img src="./assets/banner_1.jpg" alt="">
+    </div>
+
+    <label>
+        <select onchange="selectFilter(this);" class='content__select' >
+            <option value="./index.html">Фототехника</option>
+            <option value="?filter=camera">Цифровые фотоаппараты</option>
+            <option value="?filter=lens">Объективы</a></option>
+            <option value="./index.html">Фотовспышки</a></option>
+            <option value="./index.html">Светофильтры</a></option>
+            <option value="./index.html">Фотосумки</a></option>
+            <option value="./index.html">Штативыб моноподы</a></option>
+            <option value="./index.html">Карты памяти</a></option>
+            <option value="./index.html">Накамерный свет LED</a></option>
+            <option value="./index.html">Микрофоны выносные</a></option>
+            <option value="./index.html">Калибраторы и шкалы</a></option>
+            <option value="./index.html">Подводные боксы</a></option>
+            <option value="./index.html">Аксессуары и опции</a></option>
+
+        </select>
+    </label>
+
+    <div class="content__body">
+        <img class="content__body__banner" src="./assets/banner.jpg" alt="">
+        <div class="content__body__goods"></div>
     </div>
 </div>
 
-<footer>
-
-</footer>
+<div class="arrow-up" onclick="window.scrollTo(0, 0);"></div>
+<script src="./scripts/items.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 </html>
