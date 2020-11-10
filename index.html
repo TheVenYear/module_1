@@ -5,32 +5,71 @@
     <title>Title</title>
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img alt="Логотип" src="./assets/Logotip.png" class="logo__img"/>
-        <div class="logo__text">профессиональная фототехника</div>
-    </div>
-
-    <div class="header__content">
-        <div class="header__content__info">
-            <div class="header__content__info__phone">
-                <span>+7 (495) 984-82-71</span>
-                <span>+7 (495) 902-60-95</span>
-            </div>
-
-            <div class="header__content__info__days">
-                <span>Пн-Пт: с 10:00 до 19:00</span>
-                <span>Сб-Вс: Выходной</span>
-            </div>
+<div class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <img alt="Логотип" src="./assets/Logotip.png" class="header__logo__img"/>
+            <div class="header__logo__text">профессиональная фототехника</div>
         </div>
 
-        <div class="header__content__auth">
+        <div class="header__content">
+            <div class="header__content__info">
+                <div class="header__content__info__phone">
+                    <div>+7 (495) 984-82-71</div>
+                    <div>+7 (495) 902-60-95</div>
+                </div>
 
+                <div class="header__content__info__days">
+                    <div>Пн-Пт: с 10:00 до 19:00</div>
+                    <div>Сб-Вс: Выходной</div>
+                </div>
+            </div>
+
+            <div class="header__content__etc">
+                <div class="header__content__etc__auth">
+                    <a href="#">Вход с паролем</a><span>/</span><a href="#">Регистрация</a>
+                </div>
+
+                <div class="header__content__etc__shop">
+                    <img alt="" src="./assets/korz_2.png" class="header__content__etc__shop__img"/>
+                    <div class="header__content__etc__shop__items">
+                        <a href="#">Моя корзина</a>
+                        <div>Товары: 0 шт.</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</header>
+
+    <div class="header_nav">
+        <div class="header_nav__inner">
+            <div class="header_nav__menu">
+                <a class="header_nav__menu__shop">
+                    <img src="assets/korz_1.png" alt="Магазин">
+                </a>
+                <nav class="header_nav__links">
+                    <a href="#">Новости</a>
+                    <a href="#">О компнии</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">В кредит</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Гарантии</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <label>
+                    <input>
+                    <button>Найти</button>
+                </label>
+            </div>
+
+        </div>
+        <div class="header_nav__line"></div>
+        <hr>
+    </div>
+</div>
 
 <div class="content">
 
