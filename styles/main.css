@@ -10,6 +10,36 @@ img {
   heigth: 100%;
 }
 
+.side_menu {
+  display: block;
+  flex-direction: column;
+  background: #222222;
+  width: 200px;
+  transform: translateX(200px);
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: fixed;
+  transition: 500ms;
+}
+
+.side_menu__links a {
+  color: #FFB325;
+}
+
+.activated {
+  transform: translateX(0px);
+}
+
+.side_menu__links {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+}
+
 .arrow-up {
   width: 0;
   height: 0;
@@ -20,7 +50,6 @@ img {
   right: 50px;
   display: none;
   border-bottom: 25px solid #2F2C2C;
-  transition: 100ms;
 }
 
 @media (max-width: 690px) {

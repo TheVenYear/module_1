@@ -39,3 +39,16 @@ const selectFilter = (e) => {
   window.history.pushState(undefined, undefined, e.value);
   loadPage();
 }
+
+const toggleSidebar = () => {
+  let sideMenu = document.querySelector('.side_menu');
+  sideMenu.classList.add('activated');
+};
+
+document.body.addEventListener('click', e => {
+  const sideMenu = document.querySelector('.side_menu');
+  const burger = document.querySelector('.header__burger');
+  if (!sideMenu.contains(e.target) && !burger.contains(e.target)) {
+    sideMenu.classList.remove('activated');
+  }
+});

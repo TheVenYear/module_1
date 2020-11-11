@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="header__burger">
+        <div onclick="toggleSidebar();" class="header__burger">
             <span></span>
         </div>
     </div>
@@ -97,7 +97,7 @@
     </div>
 
     <label>
-        <select onchange="selectFilter(this);" class='content__select' >
+        <select onchange="selectFilter(this);" class='content__select'>
             <option value="./index.html">Фототехника</option>
             <option value="?filter=camera">Цифровые фотоаппараты</option>
             <option value="?filter=lens">Объективы</a></option>
@@ -121,6 +121,18 @@
     </div>
 </div>
 
+
+<div class="side_menu">
+    <nav class="side_menu__links">
+        <a href="#">Новости</a>
+        <a href="#">О компнии</a>
+        <a href="#">Оплата</a>
+        <a href="#">В кредит</a>
+        <a href="#">Доставка</a>
+        <a href="#">Гарантии</a>
+        <a href="#">Контакты</a>
+    </nav>
+</div>
 <div class="arrow-up" onclick="window.scrollTo(0, 0);"></div>
 <script src="./scripts/items.js"></script>
 <script src="./scripts/index.js"></script>
