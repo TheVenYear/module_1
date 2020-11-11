@@ -73,6 +73,7 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .header__burger span,:after, :before {
@@ -145,6 +146,10 @@
   margin: 10px;
 }
 
+.header_nav__links a:hover {
+  text-decoration: none;
+  color: #F3F3F3;
+}
 
 @media (max-width: 840px) {
   .header__inner {

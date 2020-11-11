@@ -75,6 +75,10 @@
   color: #2F2C2C;
 }
 
+.content__body__goods__item__info__title:hover {
+  color: red;
+}
+
 .content__body__goods__item__link {
   width: 400px;
   height: 200px;
@@ -100,6 +104,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 100ms;
+}
+
+.content__body__goods__item__link__btn:hover {
+  background: #2F2C2C;
+  cursor: pointer;
+  color: white;
 }
 
 @media(max-width: 690px) {

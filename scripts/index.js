@@ -18,10 +18,8 @@ const loadPage = () => {
   const url = new URL(window.location.href);
   const category = url.searchParams.get('filter');
   if (!category) {
-    console.log(category);
     state = goods;
   } else {
-    console.log(category);
     state = goods.filter(item => item.category === category);
   }
   const temp = document.createElement('div');
